@@ -1,0 +1,80 @@
+/*!
+    ----------------------------------
+    1. Reset CSS
+    2. Fonts
+    3. Default styles
+    4. Header
+    5. About
+    6. Benefits
+    7. Features
+    8. Reviews
+    9. Routes
+    10. Questions
+    11. Team
+    12. Booking
+    13. Footer
+    14. Media
+    ----------------------------------
+ */
+
+/*
+    ----------------------------------
+    1. Reset CSS
+    ----------------------------------
+*/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  color: unset;
+}
+
+article,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+}
+
+
