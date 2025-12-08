@@ -3,17 +3,6 @@
     1. Reset CSS
     2. Fonts
     3. Default styles
-    4. Header
-    5. About
-    6. Benefits
-    7. Features
-    8. Reviews
-    9. Routes
-    10. Questions
-    11. Team
-    12. Booking
-    13. Footer
-    14. Media
     ----------------------------------
  */
 
@@ -77,4 +66,16 @@ input {
   outline: none;
 }
 
+/*
+    ----------------------------------
+    2. Font
+    ----------------------------------
+*/
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
