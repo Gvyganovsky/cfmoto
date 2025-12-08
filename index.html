@@ -21,21 +21,172 @@
 
 <body>
 
-<header>
-  <div class="header__top">
-    <img
-      src="./images/logo.svg"
-      class="logo"
-      alt="Логотип"
-      width="110"
-      height="140"
-    >
+<header class="header">
+  <div class="container">
+    <div class="header__top">
+      <a
+        href="/"
+        class="logo-link"
+        aria-label="На главную страницу"
+      >
+        <img
+          src="./images/logo.svg"
+          alt="Название компании или логотип"
+          width="110"
+          height="140"
+        >
+      </a>
 
+      <nav
+        class="header__menu menu"
+        aria-label="Основная навигация"
+      >
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a
+              href="/routes"
+              aria-label="Перейти к разделу маршруты"
+            >
+              Маршруты
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              href="/gallery"
+              aria-label="Перейти к галерее фотографий"
+            >
+              Галерея
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              href="/faq"
+              aria-label="Перейти к разделу вопросы и ответы"
+            >
+              Вопрос-ответ
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              href="/contacts"
+              aria-label="Перейти к контактной информации"
+            >
+              Контакты
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              href="/booking"
+              aria-label="Забронировать тур. Откроется форма бронирования"
+              class="booking-link"
+            >
+              Забронировать
+            </a>
+          </li>
+        </ul>
+
+        <div class="phone">
+          <a
+            href="tel:+79283332645"
+            class="number"
+            aria-label="Позвонить по номеру +7 928 333 26 45"
+          >
+            +7 928 333 26 45
+          </a>
+
+          <button
+            type="button"
+            class="phone__button button"
+            aria-label="Заказать обратный звонок"
+            data-callback-button
+          >
+            Перезвоните мне
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="header__hero">
+      <h1 class="header__title">
+        Экскурсии на квадроциклах в Геленджике
+      </h1>
+      <p class="header__text">приезжайте за новыми ощущениями и эмоциями!</p>
+      <button
+        type="button"
+        class="header__routes button"
+        aria-label="Подобрат маршрут"
+      >
+        <span class="header__arrow">Подобрать маршрут</span>
+        <img
+          src="./images/arrow.svg"
+          alt="Стрелка вправо"
+          width="30"
+          height="30"
+        >
+
+      </button>
+
+    </div>
   </div>
 </header>
 
 <main>
-  asdasd
+  <section class="advantage">
+    <div class="container">
+      <ul class="advantage__list">
+        <li class="advantage__item">
+          <img
+            src="./images/advantage1.svg"
+            alt="Экскурсии"
+            width="58"
+            height="45"
+            loading="lazy"
+            decoding="async"
+          >
+          <p class="advantage__title">Увлекательные экскурсии</p>
+          <p class="advantage__text">Маршруты от лесных дорожек до полного бездорожья!
+          </p>
+        </li>
+        <li class="advantage__item">
+          <img
+            src="./images/advantage2.svg"
+            alt="Техника"
+            width="61"
+            height="45"
+            loading="lazy"
+            decoding="async"
+          >
+          <p class="advantage__title">Надежная техника</p>
+          <p class="advantage__text">18 квадроциклов всех японских брендов</p>
+        </li>
+        <li class="advantage__item">
+          <img
+            src="./images/advantage3.svg"
+            alt="Экипировка"
+            width="52"
+            height="45"
+            loading="lazy"
+            decoding="async"
+          >
+          <p class="advantage__title">Экипировка бесплатно</p>
+          <p class="advantage__text">Необходимая экипировка выдается бесплатно</p>
+        </li>
+        <li class="advantage__item">
+          <img
+            src="./images/advantage4.svg"
+            alt="Инструктор"
+            width="60"
+            height="45"
+            loading="lazy"
+            decoding="async"
+          >
+          <p class="advantage__title">Опытные инструктора</p>
+          <p class="advantage__text">Обеспечат полную безопасность Вашего отдыха</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
 </main>
 
 <footer>
