@@ -5,6 +5,7 @@
     3. Default styles
     4. Header
     5. Advantage
+    6. Routes
     ----------------------------------
  */
 
@@ -114,6 +115,7 @@ a {
   --color-main: #037E8C;
   --color-white: #FFFFFF;
   --color-black: #121214;
+  --color-gray: #F4F4F4;
 
   --font-family-primary: "Montserrat", sans-serif;
 }
@@ -220,7 +222,7 @@ body {
 }
 
 .header__hero {
-  margin-top: 180px;
+  margin-top: 140px;
 }
 
 .header__title {
@@ -263,6 +265,7 @@ body {
 
 .advantage__item {
   width: 100%;
+  height: 170px;
   max-width: 300px;
 }
 
@@ -276,4 +279,120 @@ body {
   font-size: 18px;
   margin-top: 12px;
   line-height: 130%;
+}
+
+/*
+    ----------------------------------
+    6. Routes
+    ----------------------------------
+*/
+
+.routes {
+  margin-top: 30px;
+  padding-top: 60px;
+  background-color: var(--color-gray);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./images/routes-background.webp");
+}
+
+.routes__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.routes__title {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.route__title {
+  font-size: 36px;
+  font-weight: 600;
+
+  display: flex;
+  position: relative;
+}
+
+.route__title::before {
+  content: '';
+  height: 4px;
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: -110px;
+  background-color: var(--color-main);
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.route__info {
+  margin-top: 32px;
+}
+
+.route__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.route__icon {
+  margin-right: 18px;
+}
+
+.route__item-text {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.route__item-text_bold {
+  font-weight: 600;
+}
+
+.route__places {
+  margin-top: 32px;
+}
+
+.route__places-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: end;
+}
+
+.route__places-title::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: 16px;
+  background-image: url("./images/places.svg");
+}
+
+.route__places-text {
+  margin-top: 12px;
+  max-width: 520px;
+  line-height: 160%;
+}
+
+.route__buttons {
+  gap: 15px;
+  display: flex;
+  margin-top: 40px;
 }
