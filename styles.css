@@ -289,7 +289,6 @@ body {
 
 .routes {
   margin-top: 30px;
-  padding-top: 60px;
   background-color: var(--color-gray);
 
   background-size: cover;
@@ -299,8 +298,10 @@ body {
 
 .routes__container {
   display: flex;
+  margin-top: 60px;
   flex-direction: column;
   justify-content: center;
+  margin-left: calc((100% - 1080px) / 2);
 }
 
 .routes__title {
@@ -311,6 +312,13 @@ body {
 }
 
 .route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.route__container {
+  gap: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
