@@ -7,16 +7,109 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
+  <meta
+    name="color-scheme"
+    content="light"
+  >
 
-  <title>
-    CFMOTO
-    Экскурсии на квадроциклах в Геленджике
-  </title>
+  <title>CFMOTO — Экскурсии на квадроциклах в Геленджике</title>
+
+  <style>
+    :root {
+      --color-main: #037E8C;
+      --color-white: #FFFFFF;
+      --color-black: #121214;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1320px;
+      padding: 0 10px;
+      margin: 0 auto;
+    }
+
+    .header {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+    }
+
+    .header__top {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 12px;
+      color: var(--color-white);
+    }
+
+    .header__menu {
+      display: flex;
+      gap: 60px;
+      margin-top: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .header__hero {
+      margin-top: 140px;
+    }
+
+    .header__title {
+      max-width: 600px;
+      font-size: 70px;
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--color-white);
+    }
+
+    .button {
+      width: 175px;
+      height: 45px;
+      border-radius: 10px;
+      background-color: var(--color-main);
+      color: var(--color-white);
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 
   <link
-    rel="stylesheet"
-    href="./styles.css"
+    rel="preload"
+    as="image"
+    href="/images/header-background.webp"
+    fetchpriority="high"
   >
+
+  <link
+    rel="preload"
+    href="/fonts/Montserrat-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+
+  <link
+    rel="preload"
+    href="/styles.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="/styles.css"
+    >
+  </noscript>
 </head>
 
 <body>
