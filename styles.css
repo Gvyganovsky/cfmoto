@@ -91,8 +91,8 @@ a {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/Montserrat-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
+  src: url("./fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -101,6 +101,14 @@ a {
   font-family: "Montserrat";
   src: url("./fonts/Montserrat-SemiBold.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -116,6 +124,7 @@ a {
   --color-white: #FFFFFF;
   --color-black: #121214;
   --color-gray: #F4F4F4;
+  --color-black-gray: #787878;
 
   --font-family-primary: "Montserrat", sans-serif;
 }
@@ -125,14 +134,17 @@ body {
   font-family: var(--font-family-primary), sans-serif;
 }
 
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 130%;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 10px;
   max-width: 1320px;
-}
-
-.menu {
-
 }
 
 .menu__list {
@@ -152,7 +164,7 @@ body {
   border: none;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   border-radius: 10px;
   color: var(--color-white);
   transition: background 0.5s ease;
@@ -305,9 +317,6 @@ body {
 }
 
 .routes__title {
-  font-size: 36px;
-  font-weight: 800;
-  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -403,4 +412,484 @@ body {
   gap: 15px;
   display: flex;
   margin-top: 40px;
+}
+
+/*
+    ----------------------------------
+    7. Test
+    ----------------------------------
+*/
+
+.test {
+  margin-top: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./images/test.webp");
+}
+
+.test__container {
+  padding: 80px 0 90px;
+  text-align: center;
+}
+
+.test__title {
+  color: var(--color-white);
+}
+
+.test__text {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.test__button {
+  margin: 40px auto 0;
+}
+
+/*
+    ----------------------------------
+    6. Video
+    ----------------------------------
+*/
+
+/*
+    ----------------------------------
+    6. Team
+    ----------------------------------
+*/
+
+.team__container {
+  gap: 30px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.team__item {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: var(--color-gray);
+}
+
+.team__image {
+  border-radius: 10px 10px 0 0;
+}
+
+.team__name {
+  padding: 0 26px;
+  font-size: 18px;
+  margin-top: 18px;
+  font-weight: 800;
+  color: var(--color-main);
+}
+
+.team__post {
+  padding: 0 26px;
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+/*
+    ----------------------------------
+    6. Terms
+    ----------------------------------
+*/
+
+.terms {
+  padding: 50px 0 82px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./images/terms-background.webp");
+}
+
+.terms__title {
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.terms__list {
+  margin-top: 44px;
+  display: grid;
+  row-gap: 30px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.terms__item {
+  gap: 18px;
+  width: 100%;
+  display: flex;
+  height: 120px;
+  max-width: 420px;
+  padding: 9px 25px 5px 9px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+}
+
+.terms__text {
+  line-height: 130%;
+}
+
+
+/*
+    ----------------------------------
+    6. Special
+    ----------------------------------
+*/
+
+.special {
+  padding: 160px 0 75px;
+}
+
+.special__container {
+  gap: 30px;
+  display: flex;
+}
+
+.special__item {
+  gap: 32px;
+  width: 100%;
+  height: 310px;
+  display: flex;
+  max-width: 640px;
+  border-radius: 10px;
+  background-color: var(--color-gray);
+}
+
+.special__image {
+  border-radius: 10px;
+}
+
+.special__info {
+  overflow: hidden;
+  position: relative;
+}
+
+.special__title {
+  font-size: 24px;
+  margin-top: 26px;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--color-main);
+}
+
+.special__title_big {
+  display: block;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.special__text {
+  z-index: 2;
+  font-size: 18px;
+  margin-top: 20px;
+  position: relative;
+  line-height: 130%;
+}
+
+.special__button {
+  z-index: 2;
+  margin-top: 14px;
+  position: relative;
+}
+
+.special__background {
+  top: 105px;
+  left: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+/*
+    ----------------------------------
+    6. Gift
+    ----------------------------------
+*/
+
+.gift {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./images/gift-background.webp");
+}
+
+.gift__container {
+  padding: 50px 0 90px;
+}
+
+.gift__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 560px;
+  text-align: center;
+  margin: 14px auto 0;
+  color: var(--color-main);
+}
+
+.gift__content {
+  display: flex;
+  margin-top: 46px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gift__description {
+  font-size: 18px;
+  max-width: 524px;
+  line-height: 170%;
+}
+
+.gift__button {
+  width: 275px;
+  margin-top: 30px;
+}
+
+/*
+    ----------------------------------
+    6. Questions
+    ----------------------------------
+*/
+
+.questions__container {
+  margin-top: 70px;
+}
+
+.questions__content {
+  gap: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.questions__list {
+  margin-top: 50px;
+}
+
+.questions__item {
+  width: 100%;
+  cursor: pointer;
+  max-width: 540px;
+  padding: 16px 25px;
+  border: 1px solid var(--color-main);
+  margin-top: 8px;
+}
+
+.questions__item_active .questions__item-text {
+  opacity: 1;
+  margin-top: 25px;
+  max-height: 500px;
+}
+
+.questions__item_active .questions__item-icon {
+  background-color: var(--color-main);
+  transform: rotate(-90deg);
+}
+
+.questions__item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questions__item-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.questions__item-icon {
+  width: 22px;
+  height: 22px;
+  background-color: var(--color-black);
+  -webkit-mask: url('./images/questions-icon.svg') no-repeat center;
+  mask: url('./images/questions-icon.svg') no-repeat center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.questions__item-text {
+  line-height: 21px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.questions__ask {
+  text-align: center;
+}
+
+.questions__ask-title {
+  font-size: 24px;
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+.questions__ask-text {
+  line-height: 120%;
+}
+
+.questions__ask-text:nth-of-type(1) {
+  margin-top: 14px;
+}
+
+.questions__ask-text_long {
+  max-width: 380px;
+}
+
+.questions__ask-button {
+  margin: 30px auto 0;
+}
+
+/*
+    ----------------------------------
+    6. Addons
+    ----------------------------------
+*/
+
+.addons {
+  padding-top: 80px;
+}
+
+.addons__list {
+  display: grid;
+  row-gap: 30px;
+  margin-top: 60px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.addons__item {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: var(--color-gray);
+}
+
+.addons__image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.addons__text {
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 225px;
+  line-height: 130%;
+  margin: 30px 0 0 24px;
+  color: var(--color-main);
+}
+
+/*
+    ----------------------------------
+    8. Photos
+    ----------------------------------
+*/
+
+.photos {
+  margin-top: 60px;
+}
+
+.photos__title {
+
+}
+
+/*
+    ----------------------------------
+    6. Contacts
+    ----------------------------------
+*/
+
+.contacts {
+  padding-top: 100px;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__media {
+  border-top: 3px solid var(--color-main);
+}
+
+.contacts__title {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.contacts__list {
+  max-width: 620px;
+  margin-top: 64px;
+
+  column-gap: 16px;
+  row-gap: 40px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contacts__item {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__text {
+  font-size: 16px;
+}
+
+.social {
+  margin-top: 16px;
+}
+
+
+.social__text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 52px;
+}
+
+.social__icons {
+  gap: 20px;
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.social__icon {
+  cursor: pointer;
+}
+
+/*
+    ----------------------------------
+    6. Footer
+    ----------------------------------
+*/
+
+.footer {
+  padding: 74px 0 24px;
+}
+
+.footer__container {
+  gap: 200px;
+  display: flex;
+  padding: 2px 0;
+  align-items: center;
+  justify-content: right;
+  border-top: 1px solid var(--color-black-gray);
+  border-bottom: 1px solid var(--color-black-gray);
+}
+
+.footer__list {
+  gap: 68px;
+}
+
+.footer__item {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.company {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--color-black-gray);
 }
