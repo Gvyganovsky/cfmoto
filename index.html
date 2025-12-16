@@ -17,6 +17,11 @@
     rel="stylesheet"
     href="./styles.css"
   >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
@@ -287,7 +292,54 @@
   </section>
 
   <section class="photos">
-    <h2 class="photos__title title">Фото</h2>
+    <h2 class="title">Фото</h2>
+    <div class="photos__container container">
+      <div class="photos__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./images/photo1.webp"
+              alt="Высокая трава"
+              width="410"
+              height="410"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/photo2.webp"
+              alt="Высокая трава"
+              width="410"
+              height="410"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/photo3.webp"
+              alt="Высокая трава"
+              width="410"
+              height="410"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/route6.webp"
+              alt="Высокая трава"
+              width="410"
+              height="410"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+        </div>
+      </div>
+      <div class="photos__pagination swiper-pagination"></div>
+    </div>
   </section>
 
   <section class="video">
@@ -964,6 +1016,7 @@
   <p class="company">© CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script src="./scripts.js"></script>
 </body>
 
