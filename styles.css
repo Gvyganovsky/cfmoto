@@ -453,6 +453,21 @@ body {
     ----------------------------------
 */
 
+.video {
+  margin: 0 auto;
+  padding: 82px 0;
+  max-width: 1920px;
+  text-align: center;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url("./images/video-background.webp");
+}
+
+.video__item {
+  max-width: 100%;
+}
+
 /*
     ----------------------------------
     6. Team
