@@ -1,5 +1,33 @@
 /*
     ----------------------------------
+    1. Header
+    ----------------------------------
+*/
+
+var swiper = new Swiper('.header__swiper', {
+  direction: 'vertical',
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  speed: 2000,
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  allowTouchMove: false
+});
+
+/*
+    ----------------------------------
     2. Route
     ----------------------------------
 */
@@ -77,7 +105,7 @@ var swiper = new Swiper('.photos__swiper', {
     el: '.photos__pagination',
     clickable: true,
     dynamicBullets: true,
-    dynamicMainBullets: 3,
+    dynamicMainBullets: 3
   }
 });
 

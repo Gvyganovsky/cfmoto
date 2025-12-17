@@ -27,110 +27,137 @@
 <body>
 
 <header class="header">
-  <div class="container">
-    <div class="header__top">
-      <a
-        href="/"
-        class="logo-link"
-        aria-label="На главную страницу"
-      >
+  <div class="header__swiper swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
         <img
-          src="./images/logo.svg"
-          alt="Логотип"
-          width="110"
-          height="140"
+          src="./images/header-background.webp"
+          class="header__swiper-image"
+          alt="Фон природы"
+          width="1920"
+          height="900"
         >
-      </a>
-
-      <nav
-        class="header__menu menu"
-        aria-label="Основная навигация"
-      >
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a
-              href="/routes"
-              aria-label="Перейти к разделу маршруты"
-            >
-              Маршруты
-            </a>
-          </li>
-          <li class="menu__item">
-            <a
-              href="/gallery"
-              aria-label="Перейти к галерее фотографий"
-            >
-              Галерея
-            </a>
-          </li>
-          <li class="menu__item">
-            <a
-              href="/faq"
-              aria-label="Перейти к разделу вопросы и ответы"
-            >
-              Вопрос-ответ
-            </a>
-          </li>
-          <li class="menu__item">
-            <a
-              href="/contacts"
-              aria-label="Перейти к контактной информации"
-            >
-              Контакты
-            </a>
-          </li>
-          <li class="menu__item">
-            <a
-              href="/booking"
-              aria-label="Забронировать тур. Откроется форма бронирования"
-              class="booking-link"
-            >
-              Забронировать
-            </a>
-          </li>
-        </ul>
-
-        <div class="phone">
-          <a
-            href="tel:+79283332645"
-            class="number"
-            aria-label="Позвонить по номеру +7 928 333 26 45"
-          >
-            +7 928 333 26 45
-          </a>
-
-          <button
-            type="button"
-            class="phone__button button"
-            aria-label="Заказать обратный звонок"
-            data-callback-button
-          >
-            Перезвоните мне
-          </button>
-        </div>
-      </nav>
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="./images/header-background2.webp"
+          alt="Человек на квадрацикле"
+          width="1920"
+          height="900"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
     </div>
+    <div class="header__pagination swiper-pagination"></div>
+  </div>
 
-    <div class="header__hero">
-      <h1 class="header__title">
-        Экскурсии на квадроциклах в Геленджике
-      </h1>
-      <p class="header__text">приезжайте за новыми ощущениями и эмоциями!</p>
-      <button
-        type="button"
-        class="header__routes button"
-        aria-label="Подобрат маршрут"
-      >
-        <span class="header__arrow">Подобрать маршрут</span>
-        <img
-          src="./images/arrow.svg"
-          alt="Стрелка вправо"
-          width="30"
-          height="30"
+  <div class="header__content">
+    <div class="container">
+      <div class="header__top">
+        <a
+          href="/"
+          class="logo-link"
+          aria-label="На главную страницу"
         >
+          <img
+            src="./images/logo.svg"
+            alt="Логотип"
+            width="110"
+            height="140"
+          >
+        </a>
 
-      </button>
+        <nav
+          class="header__menu menu"
+          aria-label="Основная навигация"
+        >
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                href="/routes"
+                aria-label="Перейти к разделу маршруты"
+              >
+                Маршруты
+              </a>
+            </li>
+            <li class="menu__item">
+              <a
+                href="/gallery"
+                aria-label="Перейти к галерее фотографий"
+              >
+                Галерея
+              </a>
+            </li>
+            <li class="menu__item">
+              <a
+                href="/faq"
+                aria-label="Перейти к разделу вопросы и ответы"
+              >
+                Вопрос-ответ
+              </a>
+            </li>
+            <li class="menu__item">
+              <a
+                href="/contacts"
+                aria-label="Перейти к контактной информации"
+              >
+                Контакты
+              </a>
+            </li>
+            <li class="menu__item">
+              <a
+                href="/booking"
+                aria-label="Забронировать тур. Откроется форма бронирования"
+                class="booking-link"
+              >
+                Забронировать
+              </a>
+            </li>
+          </ul>
 
+          <div class="phone">
+            <a
+              href="tel:+79283332645"
+              class="number"
+              aria-label="Позвонить по номеру +7 928 333 26 45"
+            >
+              +7 928 333 26 45
+            </a>
+
+            <button
+              type="button"
+              class="phone__button button"
+              aria-label="Заказать обратный звонок"
+              data-callback-button
+            >
+              Перезвоните мне
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__hero">
+        <h1 class="header__title">
+          Экскурсии на квадроциклах в Геленджике
+        </h1>
+        <p class="header__text">приезжайте за новыми ощущениями и эмоциями!</p>
+        <button
+          type="button"
+          class="header__routes button"
+          aria-label="Подобрат маршрут"
+        >
+          <span class="header__arrow">Подобрать маршрут</span>
+          <img
+            src="./images/arrow.svg"
+            alt="Стрелка вправо"
+            width="30"
+            height="30"
+          >
+
+        </button>
+
+      </div>
     </div>
   </div>
 </header>
