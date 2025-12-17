@@ -1,6 +1,58 @@
 /*
     ----------------------------------
-    1. Photos
+    2. Route
+    ----------------------------------
+*/
+
+var swiper = new Swiper('.route__swiper-base', {
+  loop: true,
+  speed: 1000,
+  lazy: true,
+  autoplay: true,
+  slidesPerView: 1,
+  delay: 3000,
+  keyboard: true,
+  mousewheel: true,
+  spaceBetween: 20,
+  breakpoints: {
+    1320: {
+      slidesPerView: 2,
+      centeredSlides: false
+    }
+  },
+
+  pagination: {
+    el: '.base',
+    clickable: true
+  }
+});
+
+var swiper = new Swiper('.route__swiper-advanced', {
+  loop: true,
+  speed: 1000,
+  lazy: true,
+  autoplay: true,
+  slidesPerView: 1,
+  delay: 3000,
+  keyboard: true,
+  mousewheel: true,
+  spaceBetween: 20,
+  breakpoints: {
+    1320: {
+      slidesPerView: 2,
+      centeredSlides: false
+    }
+  },
+
+  pagination: {
+    el: '.advanced',
+    clickable: true
+  }
+});
+
+/*
+    ----------------------------------
+    3. Photos
     ----------------------------------
 */
 
@@ -22,13 +74,16 @@ var swiper = new Swiper('.photos__swiper', {
   },
 
   pagination: {
-    el: ".photos__pagination",
+    el: '.photos__pagination',
+    clickable: true,
     dynamicBullets: true,
-  },
+    dynamicMainBullets: 3,
+  }
 });
+
 /*
     ----------------------------------
-    2. Questions
+    4. Questions
     ----------------------------------
 */
 
