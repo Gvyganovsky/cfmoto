@@ -122,3 +122,27 @@ questions.forEach(question => {
     question.classList.toggle('questions__item_active');
   });
 });
+
+/*
+    ----------------------------------
+    5. Booking
+    ----------------------------------
+*/
+
+let input = document.querySelector('[data-input-booking]');
+const minus = document.querySelector('[data-button-minus]');
+const plus = document.querySelector('[data-button-plus]');
+
+minus.addEventListener('click', () => {
+  let currentValue = parseInt(input.value, 10);
+  if (currentValue > input.min) {
+    input.value = currentValue - 1;
+  }
+});
+
+plus.addEventListener('click', () => {
+  let currentValue = parseInt(input.value, 10);
+  if (currentValue < input.max) {
+    input.value = currentValue + 1;
+  }
+});
