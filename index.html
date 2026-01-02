@@ -55,108 +55,51 @@
   <div class="header__content">
     <div class="container">
       <div class="header__top">
-        <a
-          href="/"
-          class="logo-link"
-          aria-label="На главную страницу"
-        >
-          <img
-            src="./images/logo.svg"
-            alt="Логотип"
-            width="110"
-            height="140"
-          >
+        <a href="/" class="logo-link" aria-label="На главную страницу">
+          <img src="./images/logo.svg" alt="Логотип" width="110" height="140">
         </a>
 
-        <nav
-          class="header__menu menu"
-          aria-label="Основная навигация"
-        >
+        <button class="header__burger" aria-label="Открыть меню" aria-expanded="false">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+
+        <nav class="header__menu menu" aria-label="Основная навигация">
           <ul class="menu__list">
             <li class="menu__item">
-              <a
-                href="/routes"
-                aria-label="Перейти к разделу маршруты"
-              >
-                Маршруты
-              </a>
+              <a href="/routes" aria-label="Перейти к разделу маршруты">Маршруты</a>
             </li>
             <li class="menu__item">
-              <a
-                href="/gallery"
-                aria-label="Перейти к галерее фотографий"
-              >
-                Галерея
-              </a>
+              <a href="/gallery" aria-label="Перейти к галерее фотографий">Галерея</a>
             </li>
             <li class="menu__item">
-              <a
-                href="/faq"
-                aria-label="Перейти к разделу вопросы и ответы"
-              >
-                Вопрос-ответ
-              </a>
+              <a href="/faq" aria-label="Перейти к разделу вопросы и ответы">Вопрос-ответ</a>
             </li>
             <li class="menu__item">
-              <a
-                href="/contacts"
-                aria-label="Перейти к контактной информации"
-              >
-                Контакты
-              </a>
+              <a href="/contacts" aria-label="Перейти к контактной информации">Контакты</a>
             </li>
             <li class="menu__item">
-              <a
-                href="/booking"
-                aria-label="Забронировать тур. Откроется форма бронирования"
-                class="booking-link"
-              >
-                Забронировать
-              </a>
+              <a href="/booking" aria-label="Забронировать тур. Откроется форма бронирования" class="booking-link">Забронировать</a>
             </li>
           </ul>
 
           <div class="phone">
-            <a
-              href="tel:+79283332645"
-              class="number"
-              aria-label="Позвонить по номеру +7 928 333 26 45"
-            >
+            <a href="tel:+79283332645" class="number" aria-label="Позвонить по номеру +7 928 333 26 45">
               +7 928 333 26 45
             </a>
-
-            <button
-              type="button"
-              class="phone__button button"
-              aria-label="Заказать обратный звонок"
-              data-callback-button
-            >
-              Перезвоните мне
-            </button>
+            <button type="button" class="phone__button button" aria-label="Заказать обратный звонок" data-callback-button>Перезвоните мне</button>
           </div>
         </nav>
       </div>
 
       <div class="header__hero">
-        <h1 class="header__title">
-          Экскурсии на квадроциклах в Геленджике
-        </h1>
+        <h1 class="header__title">Экскурсии на квадроциклах в Геленджике</h1>
         <p class="header__text">приезжайте за новыми ощущениями и эмоциями!</p>
-        <button
-          type="button"
-          class="header__routes button"
-          aria-label="Подобрат маршрут"
-        >
+        <button type="button" class="header__routes button" aria-label="Подобрать маршрут">
           <span class="header__arrow">Подобрать маршрут</span>
-          <img
-            src="./images/arrow.svg"
-            alt="Стрелка вправо"
-            width="30"
-            height="30"
-          >
-
+          <img src="./images/arrow.svg" alt="Стрелка вправо" width="30" height="30">
         </button>
-
       </div>
     </div>
   </div>
@@ -1053,7 +996,7 @@
     <div class="container">
       <h2 class="title">Дополнительные услуги</h2>
 
-      <ul class="list">
+      <ul class="addons__list list">
         <li class="list__item">
           <img
             src="./images/addon1.webp"
@@ -1244,6 +1187,7 @@
 
       <img
         src="./images/map.webp"
+        class="contacts__map"
         alt="Карта"
         width="700"
         height="480"
@@ -1334,374 +1278,5 @@
 ></script>
 
 </body>
-
-<div class="route-details">
-  <div class="route-details__container container">
-    <article class="route">
-      <div class="route__container">
-        <div class="line"></div>
-        <div class="route__description">
-          <h3 class="route__title">БАЗОВЫЙ</h3>
-          <p class="price">от 4000 ₽</p>
-
-          <ul class="route__info">
-            <li class="route__item">
-              <img
-                src="./images/clock.svg"
-                class="route__icon"
-                alt="Часы"
-                width="17"
-                height="17"
-                loading="lazy"
-                decoding="async"
-              >
-              <p class="route__item-text">
-                Время в пути:
-                <span class="route__item-text_bold">1,5 - 2 часа</span>
-              </p>
-            </li>
-            <li class="route__item">
-              <img
-                src="./images/place.svg"
-                class="route__icon"
-                alt="Место"
-                width="17"
-                height="17"
-                loading="lazy"
-                decoding="async"
-              >
-              <p class="route__item-text">
-                Расстояние:
-                <span class="route__item-text_bold">20 - 25 км</span>
-              </p>
-            </li>
-            <li class="route__item">
-              <img
-                src="./images/star.svg"
-                class="route__icon"
-                alt="Звезда"
-                width="17"
-                height="17"
-                loading="lazy"
-                decoding="async"
-              >
-              <p class="route__item-text">
-                Сложность:
-                <span class="route__item-text_bold">5*** </span>
-              </p>
-            </li>
-          </ul>
-
-          <div class="route__places">
-            <h4 class="route__places-title">Маршрут</h4>
-            <p class="route__places-text">
-              Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис -
-              -Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
-              -Форсаж
-            </p>
-          </div>
-
-          <div class="route__buttons">
-            <button
-              type="button"
-              class="button"
-            >
-              Подробнее
-            </button>
-            <button
-              type="button"
-              class="button button_white"
-            >
-              Забронировать
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="route__swiper-base swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="./images/route1.webp"
-              alt="Квадрацикл"
-              width="360"
-              height="360"
-              loading="lazy"
-              decoding="async"
-            >
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/route2.webp"
-              alt="Квадрацикл"
-              width="360"
-              height="360"
-              loading="lazy"
-              decoding="async"
-            >
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./images/route3.webp"
-              alt="Квадрацикл"
-              width="360"
-              height="360"
-              loading="lazy"
-              decoding="async"
-            >
-          </div>
-        </div>
-        <div class="base swiper-pagination pagination"></div>
-      </div>
-    </article>
-
-    <div class="route-details__description">
-      <div>
-        <h3 class="route-details__title">Что посмотрим на маршруте:</h3>
-
-        <p class="route-details__text">
-          Базовый маршрут на квадроциклах — это яркое приключение по горным
-          тропам Геленджика. Вы увидите потрясающие виды, чистый родник,
-          Камень Джигита и гору Нексис с панорамой на море.
-
-          Смотровая площадка открывает красивую бухту и город. Дальше — родник
-          с ледяной водой и отдых в тени. Камень Джигита — скала с историей и
-          видами. Поднимаемся на гору Нексис — высшая точка с дольменами.
-
-          Грозовые Ворота — природная арка в скалах, место силы. Здесь можно
-          сделать лучшие фото. Потом — пикник на природе (шашлыки по желанию)
-          и финал у Цыгельского водопада, известного как «Чаша любви». Купание
-          в естественном бассейне под водопадом — самое яркое впечатление!
-
-          Маршрут проходит безопасно, с опытным инструктором. Подходит новичкам
-          и семьям. Адреналин, природа и эмоции гарантированы!
-        </p>
-      </div>
-
-      <div class="quad-bike">
-        <h3 class="route-details__title">Стоимость экскурсии за 1 квадроцикл:</h3>
-
-        <ul class="list list_quad-bike">
-          <li class="list__item">
-            <img
-              src="./images/quad-bikes/UFORCE-1000-EPS-(U10-EPS).webp"
-              class="list__image"
-              alt="UFORCE 1000 EPS (U10 EPS)"
-              width="300"
-              height="220"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3 class="list__title list__title_quad-bike">UFORCE 1000 EPS (U10 EPS)</h3>
-            <p class="list__text list__text_quad-bike">4000 ₽</p>
-          </li>
-
-          <li class="list__item">
-            <img
-              src="./images/quad-bikes/CFORCE-1000-EPS-(X10-EPS).webp"
-              class="list__image"
-              alt="CFORCE 1000 EPS (X10 EPS)"
-              width="300"
-              height="220"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3 class="list__title list__title_quad-bike">CFORCE 1000 EPS (X10 EPS)</h3>
-            <p class="list__text list__text_quad-bike">6000 ₽</p>
-          </li>
-
-          <li class="list__item">
-            <img
-              src="./images/quad-bikes/CFMOTO-CFORCE-600-EPS.webp"
-              class="list__image"
-              alt="CFMOTO CFORCE 600 EPS"
-              width="300"
-              height="220"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3 class="list__title list__title_quad-bike">CFMOTO CFORCE 600 EPS</h3>
-            <p class="list__text list__text_quad-bike">7000 ₽</p>
-          </li>
-
-          <li class="list__item">
-            <img
-              src="./images/quad-bikes/CFORCE-400L-EPS-(X4-EPS).webp"
-              class="list__image"
-              alt="CFORCE 400L EPS (X4 EPS)"
-              width="300"
-              height="220"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3 class="list__title list__title_quad-bike">CFORCE 400L EPS (X4 EPS)</h3>
-            <p class="list__text list__text_quad-bike">8000 ₽</p>
-          </li>
-
-          <li class="list__item">
-            <img
-              src="./images/quad-bikes/ZFORCE-1000.webp"
-              class="list__image"
-              alt="ZFORCE 1000"
-              width="300"
-              height="220"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3 class="list__title list__title_quad-bike">ZFORCE 1000</h3>
-            <p class="list__text list__text_quad-bike">9000 ₽</p>
-          </li>
-
-          <li class="list__item">
-            <img
-              src="./images/quad-bikes/UFORCE-2000-EPS.webp"
-              class="list__image"
-              alt="UFORCE 2000 EPS"
-              width="300"
-              height="220"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3 class="list__title list__title_quad-bike">UFORCE 2000 EPS</h3>
-            <p class="list__text list__text_quad-bike">10000 ₽</p>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-    <div class="booking">
-      <div class="booking__container">
-        <h3 class="booking__title">Бронирование онлайн</h3>
-        <form class="booking__form">
-          <div class="booking__grid">
-            <div class="booking__group">
-              <label for="date">
-                Желаемая дата
-              </label>
-
-              <div class="booking__input-wrapper">
-                <img
-                  src="./images/calendar.svg"
-                  alt="Календарь"
-                  width="22"
-                  height="22"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <input
-                  type="date"
-                  class="booking__input"
-                  id="date"
-                  name="date"
-                  required
-                />
-                <img
-                  src="./images/questions-icon.svg"
-                  class="booking__icon"
-                  alt=""
-                  width="14"
-                  height="14"
-                  loading="lazy"
-                  decoding="async"
-                >
-              </div>
-            </div>
-
-            <div class="booking__group">
-              <label for="number">
-                Количество человек
-              </label>
-
-              <div class="booking__input-wrapper booking__input-wrapper_btn">
-                <button
-                  type="button"
-                  class="booking__input-btn"
-                  data-button-minus
-                >-
-                </button>
-                <input
-                  type="number"
-                  id="number"
-                  value="3"
-                  min="1"
-                  max="12"
-                  name="number"
-                  required
-                  readonly
-                  class="booking__input-num"
-                  data-input-booking
-                >
-                <button
-                  type="button"
-                  class="booking__input-btn"
-                  data-button-plus
-                >+
-                </button>
-              </div>
-            </div>
-
-            <div class="booking__group">
-              <label for="phone">
-                Телефон или WhatsApp
-              </label>
-
-              <div class="booking__input-wrapper">
-                <img
-                  src="./images/number.svg"
-                  alt="Календарь"
-                  width="18"
-                  height="18"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <input
-                  type="number"
-                  class="booking__input"
-                  id="phone"
-                  name="date"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="booking__group">
-              <label for="name">
-                Как к Вам обращаться?
-              </label>
-
-              <div class="booking__input-wrapper">
-                <img
-                  src="./images/persona.svg"
-                  alt="Календарь"
-                  width="18"
-                  height="18"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <input
-                  type="text"
-                  class="booking__input"
-                  id="name"
-                  minlength="2"
-                  maxlength="14"
-                  name="date"
-                  required
-                />
-              </div>
-            </div>
-          </div>
-
-          <button
-            type="button"
-            class="booking__button button"
-          >
-            Забронировать
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
 </html>
 

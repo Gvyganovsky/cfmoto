@@ -125,24 +125,15 @@ questions.forEach(question => {
 
 /*
     ----------------------------------
-    5. Booking
+    5. Burger
     ----------------------------------
 */
 
-let input = document.querySelector('[data-input-booking]');
-const minus = document.querySelector('[data-button-minus]');
-const plus = document.querySelector('[data-button-plus]');
+const burgerButton = document.querySelector('.header__burger');
+const menu = document.querySelector('.header__menu');
 
-minus.addEventListener('click', () => {
-  let currentValue = parseInt(input.value, 10);
-  if (currentValue > input.min) {
-    input.value = currentValue - 1;
-  }
-});
-
-plus.addEventListener('click', () => {
-  let currentValue = parseInt(input.value, 10);
-  if (currentValue < input.max) {
-    input.value = currentValue + 1;
-  }
+burgerButton.addEventListener('click', () => {
+  const isOpen = menu.classList.contains('open');
+  menu.classList.toggle('open', !isOpen);
+  burgerButton.setAttribute('aria-expanded', !isOpen);
 });

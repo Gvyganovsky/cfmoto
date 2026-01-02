@@ -99,7 +99,7 @@ a {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/Montserrat-SemiBold.woff2") format("woff2");
+  src: url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -107,7 +107,7 @@ a {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  src: url("./fonts/Montserrat-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -149,8 +149,8 @@ body {
 }
 
 .menu__list {
-  gap: 42px;
   display: flex;
+  gap: 42px;
 }
 
 .menu__item a {
@@ -186,6 +186,7 @@ body {
   gap: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .list__item {
@@ -336,6 +337,29 @@ body {
   justify-content: center;
 }
 
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__burger-line {
+  width: 100%;
+  height: 4px;
+  background: #fff;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 /*
     ----------------------------------
     5. Advantage
@@ -347,9 +371,11 @@ body {
 }
 
 .advantage__list {
+  gap: 30px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .advantage__item {
@@ -482,6 +508,7 @@ body {
 .route__buttons {
   gap: 15px;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -611,11 +638,10 @@ body {
 }
 
 .terms__list {
-  margin-top: 44px;
+  gap: 30px;
   display: grid;
-  row-gap: 30px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 400px);
 }
 
 .terms__item {
@@ -623,6 +649,7 @@ body {
   width: 100%;
   display: flex;
   height: 120px;
+  margin-top: 50px;
   max-width: 420px;
   padding: 9px 25px 5px 9px;
   border-radius: 10px;
@@ -757,9 +784,9 @@ body {
 }
 
 .questions__content {
-  gap: 160px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .questions__list {
@@ -800,6 +827,7 @@ body {
 .questions__item-icon {
   width: 22px;
   height: 22px;
+  background-color: var(--color-black-gray);
   -webkit-mask: url('./images/questions-icon.svg') no-repeat center;
   mask: url('./images/questions-icon.svg') no-repeat center;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -847,6 +875,10 @@ body {
 
 .addons {
   padding-top: 80px;
+}
+
+.addons__list {
+  margin-top: 30px;
 }
 
 .list__title_addons {
@@ -1004,179 +1036,180 @@ body {
 
 /*
     ----------------------------------
-    . Route-details
+    6. Media
     ----------------------------------
 */
 
-.route-details {
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.4);
+@media (max-width: 1400px) {
+  .contacts__container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contacts__title {
+    text-align: center;
+  }
+
+  .contacts__list {
+    margin: 20px auto 0;
+  }
+
+  .social {
+    margin: 16px auto 0;
+  }
+
+  .social__text {
+    text-align: center;
+  }
+
+  .social__icons {
+    justify-content: center;
+  }
+
+  .contacts__map {
+    margin: 20px auto 0;
+  }
+
+  .special__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-.route-details__container {
-  padding: 40px 0 0;
-  margin: 120px auto;
-  border-radius: 10px;
-  background-color: var(--color-white);
+
+@media (max-width: 1200px) {
+  .gift__content {
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .gift__button {
+    margin: 20px auto 0;
+  }
+
+  .gift__content img {
+    height: 180px;
+    width: 100%;
+  }
+
+  .footer__container {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .footer__list {
+    display: block;
+  }
+
+  .footer__item a {
+   justify-content: center;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .header__menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .header__menu.open {
+    display: flex;
+  }
+
+  .menu__item {
+    margin: 10px 0;
+  }
+
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .phone {
+    display: none;
+  }
 }
 
-.route-details__description {
-  max-width: 1150px;
-  margin: 70px auto 0;
+@media (max-width: 900px) {
+  .swiper {
+    display: none !important;
+  }
+
+  .header__swiper {
+    display: block !important;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .header__title {
+    font-size: 62px;
+    max-width: none;
+  }
+
+  .photos__swiper {
+    display: block !important;
+  }
+
+  .questions__content {
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.route-details__title {
-  font-size: 24px;
-  font-weight: 600;
+@media (max-width: 800px) {
+  .contacts__map {
+    width: 100%;
+    height: 50%;
+  }
+
+  .contacts__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+  }
 }
 
-.route-details__text {
-  font-size: 16px;
-  margin-top: 30px;
-  line-height: 160%;
+@media (max-width: 660px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+
+  .header__text {
+    font-size: 20px;
+  }
+
+  .header__routes {
+    margin: 40px auto 0;
+  }
+
+  .special__image {
+    display: none;
+  }
 }
 
-.quad-bike {
-  margin-top: 45px;
+@media (max-width: 430px) {
+.terms__list {
+  grid-template-columns: 1fr;
 }
-
-.list_quad-bike {
-  margin-top: 45px;
-  text-align: center;
-}
-
-.list__title_quad-bike {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--color-black);
-}
-
-.list__text_quad-bike {
-  font-size: 20px;
-  font-weight: 800;
-  color: var(--color-main);
-}
-
-.booking {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("./images/booking-background.webp");
-}
-
-.booking__container {
-  max-width: 1150px;
-  padding: 55px 0 100px;
-  margin: 74px auto 0;
-}
-
-.booking__title {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.booking__form {
-  margin-top: 32px;
-}
-
-.booking__grid {
-  gap: 24px;
-  display: grid;
-  max-width: 740px;
-  font-weight: 600;
-  grid-template-columns: 1fr 1fr;
-}
-
-.booking__group {
-  display: flex;
-  flex-direction: column;
-}
-
-.booking__input:invalid::-webkit-datetime-edit {
-  opacity: 0;
-}
-
-.booking__input-wrapper {
-  width: 100%;
-  height: 46px;
-  padding: 10px;
-  display: flex;
-  margin-top: 10px;
-  max-width: 350px;
-  border-radius: 8px;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid var(--color-gray);
-  background-color: var(--color-white) !important;
-}
-
-.booking__input-wrapper_btn {
-  gap: 10px;
-  justify-content: center;
-}
-
-.booking__input-btn {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid var(--color-main);
-  background-color: var(--color-white);
-}
-
-.booking__input-num {
-  width: 78px;
-  height: 30px;
-  text-align: center;
-  border: 1px solid var(--color-main);
-  background-color: var(--color-white);
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-
-.booking__input {
-  width: 90%;
-  border: none;
-  font-size: 20px;
-}
-
-.booking__input::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  z-index: 2;
-  cursor: pointer;
-}
-
-.booking__icon {
-  top: 16px;
-  right: 10px;
-  transform: rotate(90deg);
-  cursor: pointer;
-  position: absolute;
-}
-
-.qty-input {
-  width: 60px;
-  text-align: center;
-  border: none;
-  font-size: 18px;
-  padding: 12px 0;
-  -moz-appearance: textfield; /* Firefox */
-}
-
-.booking__button {
-  margin-top: 32px;
 }
